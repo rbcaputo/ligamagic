@@ -1,0 +1,39 @@
+:root {
+  --font: 'Jost', sans-serif;
+  --white: #f4f4f2;
+  --black: #04050c;
+  --grey-nav: #9b9b98;
+  --grey-line: #cecece;
+  --grey-box: #ececea;
+  --grey-info: #babab8;
+  --grey-light-text: #727270;
+  --grey-dark-text: #474745;
+  --green-light: #daedce;
+  --green-dark: #127119;
+  --green-price: #69bc40;
+  --blue-mana: #0085ff;
+  --bluish: #becccf;
+  --yellow-price: #ddc80b;
+  --orange-price: #ff8b64;
+  --orange: #ff5921;
+  --red-favorite: #e70808;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  font-family: var(--font);
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.container-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 4fr 0.15fr 5fr;
+  width: 90%;
+  height: 90%;
+}

@@ -1,0 +1,141 @@
+.button {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  font-size: 1.15rem;
+  color: var(--black);
+}
+
+.separator-main,
+.button-more,
+.box-question,
+.box-input-icon,
+.button-filter,
+.button-add,
+.box-icon-add,
+.box-question-small {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.separator-vertical {
+  width: 1px;
+  height: 100%;
+  margin-left: -75px;
+  background-color: var(--grey-line);
+}
+
+.button-more {
+  gap: 2px;
+  width: 26px;
+  height: 26px;
+  background-color: var(--grey-box);
+  border: 1px solid var(--grey-line);
+  cursor: pointer;
+}
+
+.square {
+  width: 4px;
+  height: 4px;
+  background-color: var(--orange);
+}
+
+.box-question {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--grey-info);
+}
+
+.fa-question {
+  font-size: 0.8rem;
+  color: var(--grey-info);
+}
+
+.box-input-icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--grey-info);
+  cursor: pointer;
+}
+
+.fa-minus,
+.fa-plus {
+  font-size: 0.6rem;
+  color: var(--grey-info);
+}
+
+.box-minus {
+  left: 8px;
+}
+
+.box-plus {
+  right: 8px;
+}
+
+.button-filter {
+  width: 41px;
+  height: 41px;
+  border: 1px solid var(--grey-line);
+  margin-left: 10px;
+  box-shadow: 0 5px 15px 0 var(--grey-nav);
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.button-filter:hover {
+  box-shadow: 0 5px 15px 0 var(--grey-light-text);
+}
+
+.fa-sliders {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.button-add {
+  width: 210px;
+  height: 41px;
+  gap: 10px;
+  margin-left: 30px;
+  background-color: var(--green-dark);
+  cursor: pointer;
+}
+
+.button-add:hover .fa-plus {
+  animation: spin 0.75s ease-in-out;
+}
+
+.box-icon-add {
+  width: 20px;
+  height: 20px;
+  background-color: var(--green-light);
+}
+
+.icon-add {
+  font-size: 0.85rem;
+  color: var(--green-dark);
+}
+
+.button-add p {
+  font-weight: 500;
+  color: var(--green-light);
+}
+
+.box-question-small {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--grey-info);
+}
+
+.icon-question-small {
+  font-size: 0.6rem;
+  color: var(--grey-info);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); };
+  100% { transform: rotate(360deg); };
+}

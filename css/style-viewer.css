@@ -1,0 +1,43 @@
+.container-viewer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 20%;
+}
+
+.card-main {
+  width: 45%;
+}
+
+.separator-horizontal {
+  width: 330px;
+  height: 1px;
+  background-color: var(--grey-line);
+}
+
+.container-carousel {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.button-triangle-left {
+  margin-right: -15px;
+  cursor: pointer;
+}
+
+.button-triangle-right {
+  margin-left: -15px;
+  cursor: pointer;
+}
+
+.unselected {
+  filter: grayscale(100%);
+  opacity: 30%;
+}

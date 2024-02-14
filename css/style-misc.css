@@ -1,0 +1,26 @@
+.container-toast {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: var(--grey-box);
+}
+
+.container-toast p {
+  color: var(--grey-dark-text);
+}
+
+.animated {
+  animation: slide 3s ease-in-out;
+}
+
+@keyframes slide {
+  20% { bottom: 0 };
+  80% { bottom: 0 };
+  100% { bottom: -50px };
+}
